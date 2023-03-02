@@ -185,3 +185,52 @@
     background-color: #894b17;
     transition: color 0.3s linear;
 }
+
+/* .cards{
+    margin-left: 100px;
+    margin-right: 100px;
+} */
+
+.card{
+    background-color: #fff;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    height: 325px;
+    width: 350px;
+    margin-right: 30px;
+    margin-top: -105;
+    padding: 0 10px;
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+}
+
+.card-title{
+    text-align: center;
+    color: #2C2C2C;
+    margin-bottom: 20px;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.card-title span{
+    color: #BC9060;
+}
+
+.card-description{
+    color: #656363;
+    text-align: center;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+}
