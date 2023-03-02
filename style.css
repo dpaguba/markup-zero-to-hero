@@ -212,8 +212,12 @@
     font-size: 26px;
 }
 
-.card-title span, .history-title span{
+.card-title span{
     color: #BC9060;
+}
+
+.history-title span, .dishes-title span{
+    color: #D67E34;;
 }
 
 .card-description{
@@ -365,3 +369,61 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.dishes-title{
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    color: #000000;
+    text-align: center;
+    padding: 140px 0px;
+}
+
+.dishes-images{
+    display: flex;
+    justify-content: center;
+}
+
+.pizza img{
+    height: 480px;
+    width: 450px;
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburges-menu{
+    display: flex;
+}
+
+.hamburger-item{
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-image img{
+    margin: 0 20px 30px 20px;
+    height: 140px;
+    width: 210px;
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger-info{
+    display: flex;
+}
+
+.hamburger-name, .hamburger-price{
+    margin: 0 0 30px 10px;
+    text-align: center;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: #000000;
+}
+
+.hamburger-image img:hover, .pizza img:hover{
+    transform: scale(1.2);
+    /* ? delete to increase smothness */
+    box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
+    
+} 
