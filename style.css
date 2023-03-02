@@ -37,7 +37,7 @@
     margin-right: 25px;
 }
 
-.nav-item:hover{
+.nav-item:hover, .footer-socials a:hover, .num:hover{
     color: #FF7400;
     transition: color 0.3s linear;
 }
@@ -75,10 +75,10 @@
     text-decoration: none;   
 }
 
-.num:hover{
+/* {
     color: #FF7400;
     transition: color 0.3s linear;
-}
+} */
 
 .phone-text{
     width: 155px;
@@ -130,7 +130,7 @@
 
 .header-subtitle{
     color: #D67E35;
-    font-family: 'Tinos', serif;
+    font-family: "Cookie";
     font-weight: 400;
     font-size: 80px;
 }
@@ -142,7 +142,7 @@
     font-family: "Open Sans", sans-serif;
 }
 
-.header-subtitle_1::after{
+/* .header-subtitle_1::after{
     position: absolute;
     content: "";
     height: 2px;
@@ -160,7 +160,7 @@
     background: #fff;
     top: 172px;
     left: 335px;
-}
+} */
 
 .header-btn-menu a, .bb-btn a{
     color: #fff;
@@ -217,8 +217,8 @@
     color: #BC9060;
 }
 
-.history-title span, .dishes-title span{
-    color: #D67E34;;
+.history-title span, .dishes-title span, .cooks-title span{
+    color: #D67E34;
 }
 
 .card-description{
@@ -236,7 +236,7 @@
 }
 
 .history-title{
-    font-family: 'Tinos';
+    font-family: 'Cookie';
     font-style: normal;
     font-weight: 400;
     font-size: 54px;
@@ -545,13 +545,41 @@
     color: #FFFFFF;
 }
 
+
+.our-cooks{
+    padding: 100px 0;
+}
+
+.cooks-title{
+    text-align: center;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    color: #000000;
+    padding-bottom: 100px;
+}
+
+.cooks-images{
+    display: flex;
+    justify-content: center;
+}
+
+.cooks-images img{
+    height: 60vh;
+    width: 25vw;
+    margin: 10px;
+}
+
+
 .feedback{
     background-color: #E5E5E5;
     padding: 100px 0;
 }
 
 .feedback-text{
-    padding: 50px;
+    display: block;
+    margin: 0 auto;
     width: 920px;
     font-family: 'Open Sans';
     font-style: italic;
@@ -567,7 +595,6 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    /* margin: 20px auto; */
 }
 
 .feedback-username{
@@ -577,5 +604,56 @@
     font-weight: 600;
     font-size: 20px;
     color: #000000;
-    
+}
+
+.footer{
+    /* height: 200px; */
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(images/JPEG/footer-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.footer-socials{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-socials a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    padding: 25px;
+}
+
+.footer-name a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-name{
+    text-align: center;
+    font-family: 'Cookie';
+    font-weight: 400;
+    font-size: 60px;
+    padding: 25px;
+}
+
+
+.footer-name span{
+    color: #FF7400;
+    font-size: 80px;
+}
+
+
+.footer-text{
+    position: absolute;
+    bottom: 20px;
+    right: 160px;
+    color: rgb(70, 70, 70);
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 16px;
 }
