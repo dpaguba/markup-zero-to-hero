@@ -6,6 +6,9 @@
     padding: 0;
     border: 0;
     max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
     box-sizing: border-box;
     user-select: none;
     -webkit-user-drag: none;
@@ -42,7 +45,6 @@
 
 .nav-item{
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
     text-decoration: none;
@@ -71,7 +73,6 @@
 
 .phone-number a{
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
     text-decoration: none;   
@@ -80,8 +81,6 @@
 .phone-text{
     width: 155px;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
     font-size: 14px;
 }
 
@@ -93,7 +92,6 @@
 }
 .call-btn a{
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
     text-decoration: none;
@@ -113,7 +111,6 @@
 .header-title{
     color: #D67E35;
     font-family: 'Tinos', serif;
-    font-weight: 400;
     font-size: 50px;
     text-align: center;
 }
@@ -121,13 +118,11 @@
 .header-title span{
     color: #D67E35;
     font-family: "Cookie";
-    font-weight: 400;
     font-size: 80px;
 }
 
 .header-btn-menu a, .bb-btn a{
     color: #fff;
-    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 14px;
     background-color: #FF7400;
@@ -154,6 +149,7 @@
     margin-top: -110;
     padding: 10px;
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 .card:hover{
@@ -184,11 +180,10 @@
     color: #2C2C2C;
     font-family: 'Tinos';
     font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
 }
 
 .card-title span{
+    font-family: inherit;
     color: #BC9060;
 }
 
@@ -197,8 +192,6 @@
     text-align: center;
     font-family: 'Tinos';
     font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
 }
 
 /* ! BLOCK DISH-RECOMMENDATION */
@@ -206,7 +199,6 @@
 .dishes-title{
     font-family: 'Tinos';
     font-style: normal;
-    font-weight: 400;
     font-size: 54px;
     color: #000000;
     text-align: center;
@@ -214,6 +206,8 @@
 }
 
 .dishes-title span, .cooks-title span{
+    font-family: inherit;
+    font-size: 54px;
     color: #D67E34;
 }
 
@@ -242,6 +236,7 @@
     height: 140px;
     width: 210px;
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .hamburger-info{
@@ -253,8 +248,6 @@
     text-align: center;
     font-family: 'Tinos';
     font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
     color: #000000;
 }
 
@@ -262,6 +255,8 @@
     transform: scale(2);
     box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);    
 } 
+
+/* ! NEW ITEMS IN MENU */
 
 .menu{
     margin: 150px 0 0 0;
@@ -275,10 +270,10 @@
 
 .menu-title{
     padding: 120px 0;
+    width: 100%;
     text-align: center;
     font-family: 'Tinos';
     font-style: normal;
-    font-weight: 400;
     font-size: 54px;
     color: #FFFFFF;
     text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
@@ -338,26 +333,21 @@
 }
 
 .price{
-    padding: 25px;
+    padding: 28px;
     font-family: 'Cookie';
-    font-weight: 400;
+
     font-size: 30px;
     color: #FFFFFF;
 }
 
-/* ! NEW ITEMS IN MENU */
-
 .menu-item-text{
     font-family: 'Tinos';
-    font-weight: 400;
-    font-size: 26px;
     color: #000;
     padding: 15px 0;
 }
 
 .menu-item-description{
-    font-family: 'Open Sans';
-    font-weight: 400;
+
     font-size: 16px;
     color: #000;
     margin-bottom: 20px;
@@ -368,7 +358,6 @@
     padding: 15px 60px;
     background: #D67E34;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-    font-family: 'Open Sans';
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
@@ -391,9 +380,8 @@
 }
 
 .history-title{
-    font-family: 'Open sans';
     font-style: normal;
-    font-weight: 400;
+
     font-size: 45px;
     color: #000000;
     text-align: center;
@@ -407,9 +395,8 @@
 
 .history-description{
     margin-top: 20px;
-    font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 400;
+
     font-size: 16px;
     color: #656363;
     text-align: center;
@@ -426,9 +413,7 @@
 }
 
 .history-number{
-    font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 400;
     font-size: 40px;
     text-align: center;
     color: #BC9060;
@@ -436,9 +421,7 @@
 }
 
 .history-number-description{
-    font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     text-align: center;
     color: #000000;
@@ -456,6 +439,7 @@
     box-sizing: border-box;
     box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
     transition: transform 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .history-image_1{
@@ -513,16 +497,13 @@
 .bb-info-title{
     font-family: 'Tinos';
     font-style: normal;
-    font-weight: 400;
     font-size: 52px;
     color: #D67E34;
 }
 
 .bb-info-description{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
     color: #FFFFFF;
     margin-top: 20px;
 }
@@ -537,7 +518,6 @@
     text-align: center;
     font-family: 'Tinos';
     font-style: normal;
-    font-weight: 400;
     font-size: 54px;
     color: #000000;
     padding-bottom: 100px;
@@ -549,8 +529,8 @@
 }
 
 .cooks-images img{
-    height: 60vh;
-    width: 25vw;
+    height: 400px;
+    width: 300px;
     margin: 10px;
 }
 
@@ -565,9 +545,7 @@
     display: block;
     margin: 0 auto;
     width: 920px;
-    font-family: 'Open Sans';
     font-style: italic;
-    font-weight: 400;
     font-size: 20px;
     text-align: center;
     color: #000000;
@@ -583,7 +561,6 @@
 
 .feedback-username{
     text-align: center;
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -620,25 +597,182 @@
 
 .footer-name{
     text-align: center;
-    font-family: 'Cookie';
-    font-weight: 400;
     font-size: 60px;
     padding: 25px;
 }
 
-
 .footer-name span{
+    font-family: 'Cookie';
     color: #FF7400;
     font-size: 80px;
 }
 
 
-.footer-text{
-    position: absolute;
-    bottom: 20px;
-    right: 160px;
-    color: rgb(70, 70, 70);
-    font-family: 'Tinos', serif;
-    font-weight: 400;
-    font-size: 16px;
+@media (max-width: 1300px){
+    .pizza{
+        display: none;
+    }
+    .dishes-title{
+        margin: 100px auto;
+    }
+    .hamburgers-menu{
+        display: block
+    }
+
+    .hamburger-item{
+        margin: 30px auto;
+    }
+
+
+    .menu-title{
+        padding: 60px;
+        text-align: center;
+    }
+
+    .menu-items{
+        display: block;
+    }
+
+    .menu-item{
+        margin: 50px auto;
+    }
 }
+
+@media (max-width: 1200px) {
+    .bb-container{
+        display: block;
+    }
+
+    .bb-info{
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .bb-btn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .history-container{
+        display: block;
+    }
+
+    .history-info, .history-images{
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 950px) {
+    .cards-container{
+        display: block;
+    }
+
+    .card{
+        margin: 50px auto;
+    }  
+
+    .cooks-title{
+        margin: 0px;
+        padding: 0px;
+    }
+    .cooks-images{
+        display: block;
+    }
+
+    .cooks-images img{
+        display: block;
+        margin: 50px auto;
+    }
+
+    .bb-info-title{
+        font-size: 30px;
+    }
+    
+    .bb-info-description{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .container{
+        margin: 0 0;
+    }
+
+    .feedback, .bb-container, .history-description{
+        padding: 10px 50px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    
+
+    .dishes-title{
+        margin: 50px auto; 
+    }
+
+    .hamburger-item{
+        display: block;
+    }
+
+    .hamburger-info{
+        display: flex;
+        justify-content: center;
+    }
+
+    .history, .our-cooks, .our-dishes, .menu, .black-block, .menu-title{
+        padding: 50px 0;
+    }
+
+    .history-images{
+        width: 380px;
+        height: 320px;
+    }
+
+    .history-image_1{
+        width: 150px;
+        height: 200px;
+        z-index: 0;
+        left: 30px;
+        top: 0;
+    }
+
+    .history-image_2{
+        width: 170px;
+        height: 260px;
+        z-index: 1;
+        right: 0;
+    }
+
+    .history-image_3{
+        width: 150px;
+        height: 200px;
+        z-index: 2;
+        right: 30px;
+        top: -25px;
+    }
+
+    .bb-info{
+        margin: 10px auto;
+    }
+
+    .cooks-title, .cooks-title span, 
+    .history-title, .history-title span, .history-number,
+    .dishes-title, .dishes-title span,
+    .menu-title{
+        font-size: 30px;
+    }
+
+    .feedback-text, .feedback-username, 
+    .history-description, .number-description{
+        font-size: 14px;
+    }
+
+    .feedback-avatar img{
+        margin: 10px auto;
+        width: 100px;
+        height: 100px;
+    }
+}
+
