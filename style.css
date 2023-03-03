@@ -3,16 +3,22 @@
 
 *{
     margin: 0;
+    padding: 0;
+    border: 0;
+    max-width: 100%;
+    box-sizing: border-box;
     user-select: none;
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
 }
-.container{
 
+.container{
     margin: 0 165px;
 }
+
+/*! NAVBAR + MAIN */
 
 .header{
     background-image: url(images/PNG/bg.png);
@@ -21,11 +27,17 @@
     background-size: cover;
 }
 
-.header-line{
+.header-nav-bar{
     display: flex;
     padding: 50px 0;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.header-items{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .nav-item{
@@ -37,48 +49,33 @@
     margin-right: 25px;
 }
 
-.nav-item:hover, .footer-socials a:hover, .num:hover{
+.nav-item:hover, .footer-socials a:hover, .phone-number a:hover{
     color: #FF7400;
-    transition: color 0.3s linear;
-}
-
-.cart{
-    border-right: 1px solid #fff;
-    padding-right: 10px;
-    height: 50px;
-}
-
-.cart-img{
-    position: relative;
-    width: 20px;
-    height: 17px;
-    margin: 0 15px;
-    top: 18px;
+    transition: color 0.2s linear;
 }
 
 
 .phone{
-    margin-left: 35px;
-    margin-right: 50px;
+    border-left: 1px solid #fff;
+    padding: 0 25px
 }
 
+.phone-holder{
+    display: flex;
+    align-items: center;
+}
 
-.number{
+.phone-number{
     margin-left: 7px;
 }
 
-.num{
+.phone-number a{
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
     text-decoration: none;   
 }
-
-/* {
-    color: #FF7400;
-    transition: color 0.3s linear;
-} */
 
 .phone-text{
     width: 155px;
@@ -88,18 +85,13 @@
     font-size: 14px;
 }
 
-.phone-holder{
-    display: flex;
-    align-items: center;
-}
 
-.btn{
+.call-btn{
     background-color: #FF7400;
     padding: 14px;
     cursor: pointer;
-
 }
-.button{
+.call-btn a{
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -107,60 +99,31 @@
     text-decoration: none;
 }
 
-.btn:hover, .menu-btn a:hover{
-    background-color: #894b17;
-    transition: color 0.3s linear;
+.call-btn:hover, .menu-btn a:hover, .header-btn-menu a:hover, .bb-btn a:hover{
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: color 0.2s linear;
 }
 
-
-.header-down{
-    margin-top: 150px;
-    position: relative;
+.header-main{
+    width: 550px;
+    display: block;
+    margin: 150px auto 150px 0;
 }
+
 .header-title{
-    
     color: #D67E35;
     font-family: 'Tinos', serif;
     font-weight: 400;
     font-size: 50px;
     text-align: center;
-    position: absolute;
-    left: 0;
 }
 
-.header-subtitle{
+.header-title span{
     color: #D67E35;
     font-family: "Cookie";
     font-weight: 400;
     font-size: 80px;
 }
-
-.header-subtitle_1{
-    margin: 12px;
-    color: #fff;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-}
-
-/* .header-subtitle_1::after{
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 60px;
-    background: #fff;
-    top: 172px;
-    left: 80px;
-}
-
-.header-subtitle_1::before{
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 60px;
-    background: #fff;
-    top: 172px;
-    left: 335px;
-} */
 
 .header-btn-menu a, .bb-btn a{
     color: #fff;
@@ -173,52 +136,60 @@
 }
 
 .header-btn-menu{
-    margin: 35px;
+    margin: 50px;
 }
 
-.header-btn-menu a:hover, .bb-btn a:hover{
-    background-color: #894b17;
-    transition: color 0.3s linear;
-}
-
-
-.card{
-    background-color: #fff;
-    box-shadow: 10px 10px 40px 20px #0000001A;
-    height: 325px;
-    width: 350px;
-    margin-right: 30px;
-    margin-top: -105;
-    padding: 10px 10px;
-}
-
-.card-image{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-}
-
+/* ! BLOCK CARDS-ADVANTAGES  */
 .cards-container{
     display: flex;
     justify-content: center;
 }
 
+.card{
+    height: 320px;
+    width: 320px;
+    background-color: #fff;
+    box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
+    margin-right: 30px;
+    margin-top: -110;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(.9);
+    box-shadow: none;
+}
+
+.card-info{
+    width: 280px;
+    display: block;
+    margin: 10px auto;
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card-image img{
+    width: 100px;
+    height: 100px;
+}
+
 .card-title{
+    padding: 10px 0;
     text-align: center;
     color: #2C2C2C;
-    margin-bottom: 20px;
     font-family: 'Tinos';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 25px;
 }
 
 .card-title span{
     color: #BC9060;
-}
-
-.history-title span, .dishes-title span, .cooks-title span{
-    color: #D67E34;
 }
 
 .card-description{
@@ -227,149 +198,10 @@
     font-family: 'Tinos';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 25px;
 }
 
-.history{
-    margin-top: 160px;
-    padding-bottom: 200px;
-}
-
-.history-title{
-    font-family: 'Cookie';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 54px;
-    color: #000000;
-    text-align: center;
-    width: 440px;
-}
-
-.history-description{
-    margin-top: 20px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #656363;
-    text-align: center;
-    width: 440px;
-}
-
-.history-numbers-container{
-    display: flex;
-    width: 440px;
-    justify-content: center;
-}
-
-.history-numbers{
-    text-align: center;
-    margin: 40px 30px 0 30px;
-}
-
-.history-number{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    text-align: center;
-    color: #BC9060;
-    
-}
-
-.history-number-description{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    color: #000000;
-}
-
-.history-container{
-    display: flex;
-}
-
-.history-images{
-    position: relative;
-}
-
-.history-image_1{
-    position: absolute;
-    width: 235px;
-    height: 300px;
-    z-index: 2;
-    top: 55px;
-    left: 220px;
-    transition: transform 1s;
-}
-
-.history-image_2{
-    position: absolute;
-    width: 255px;
-    height: 420px;
-    z-index: 1;
-    top: 0;
-    left: 380px;
-    transition: transform 1s;
-}
-
-.history-image_3{
-    position: absolute;
-    box-sizing: border-box;
-    width: 255px;
-    height: 300px;
-    z-index: 0;
-    top: 200px;
-    left: 485px;
-    transition: all 1s ease-in-out;
-}
-
-.history-image_1:hover, .history-image_2:hover, .history-image_3:hover{
-    transform: scale(1.25);
-    /* ? delete to increase smothness */
-    box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
-    z-index: 2;
-}
-
-.black-block{
-    width: 100vw;
-    padding: 80px 0;
-    background-image:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
-        url(images/PNG/black-block-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bb-info{
-    display: block;
-    width: 610px;
-}
-
-.bb-info-title{
-    font-family: 'Tinos';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 52px;
-    color: #D67E34;
-
-}
-
-.bb-info-description{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    color: #FFFFFF;
-    margin-top: 20px;
-}
-
-.bb-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* ! BLOCK DISH-RECOMMENDATION */
 
 .dishes-title{
     font-family: 'Tinos';
@@ -378,7 +210,11 @@
     font-size: 54px;
     color: #000000;
     text-align: center;
-    padding: 140px 0px;
+    margin: 100px 0px;
+}
+
+.dishes-title span, .cooks-title span{
+    color: #D67E34;
 }
 
 .dishes-images{
@@ -392,8 +228,8 @@
     transition: all 0.5s ease-in-out;
 }
 
-.hamburges-menu{
-    display: flex;
+.hamburgers-menu{
+    display: block;
 }
 
 .hamburger-item{
@@ -422,19 +258,19 @@
     color: #000000;
 }
 
-.hamburger-image img:hover, .pizza img:hover{
-    transform: scale(1.2);
-    /* ? delete to increase smothness */
+.hamburger-image img:hover{
+    transform: scale(2);
     box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);    
 } 
 
 .menu{
     margin: 150px 0 0 0;
-    background-image: url(images/JPG/menu-bg.jpg);
+    padding-bottom: 225px;
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+        url(images/JPG/menu-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 225px;
-    position: relative;
 }
 
 .menu-title{
@@ -450,30 +286,23 @@
 
 .menu-items{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-
 .menu-item{
-    text-align: center;
     width: 350px;
     height: 500px;
-    margin-right: 30px;
+    margin-right: 30px; 
     background: #fff;
 }
 
-.menu-item:nth-last-child(){
-    margin-right: 0px;
-}
-
 .menu-item-info{
-    width: 230px;
-    padding: 80px 60px 20px 60px;
-}
-
-.menu-item-info:nth-child(1) {
+    display: block;
     padding-top: 60px;
+    width: 100%;
+    text-align: center;
 }
 
 .menu-item-image{
@@ -485,35 +314,6 @@
     height: 230px;
     border-radius: 50%;
 }
-
-
-.menu-item-text{
-    font-family: 'Tinos';
-    font-weight: 400;
-    font-size: 26px;
-    color: #000;
-    padding: 15px 0;
-}
-
-.menu-item-description{
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 16px;
-    color: #000;
-    padding-bottom: 20px;
-}
-
-.menu-btn a{
-    text-decoration: none;
-    padding: 15px 60px;
-    background: #D67E34;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 16px;
-    color: #FFFFFF;
-}
-
 
 .white-circle{
     width: 100px;
@@ -545,6 +345,189 @@
     color: #FFFFFF;
 }
 
+/* ! NEW ITEMS IN MENU */
+
+.menu-item-text{
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 26px;
+    color: #000;
+    padding: 15px 0;
+}
+
+.menu-item-description{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.menu-btn a{
+    text-decoration: none;
+    padding: 15px 60px;
+    background: #D67E34;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/* ! HISTORY OF JIRANI */
+
+.history{
+    padding: 150px 0;
+}
+
+.history-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-info{
+    display: block;
+    width: 440px;
+}
+
+.history-title{
+    font-family: 'Open sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    color: #000000;
+    text-align: center;
+}
+
+.history-title span{
+    font-family: "Cookie";
+    font-size: 54px;
+    color: #D67E34;
+}
+
+.history-description{
+    margin-top: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #656363;
+    text-align: center;
+}
+
+.history-numbers-container{
+    display: flex;
+    justify-content: center;
+}
+
+.history-numbers{
+    text-align: center;
+    margin: 30px;
+}
+
+.history-number{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: #BC9060;
+    
+}
+
+.history-number-description{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.history-images{
+    display: block;
+    width: 500px;
+    height: 450px;
+    position: relative;
+}
+
+.history-image_1, .history-image_2, .history-image_3{
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease-in-out;
+}
+
+.history-image_1{
+    width: 235px;
+    height: 300px;
+    z-index: 0;
+    top: 5px;
+    left: 5px;
+}
+
+.history-image_2{
+    width: 255px;
+    height: 420px;
+    z-index: 1;
+    bottom: 0;
+    left: 150px;
+}
+
+.history-image_3{
+    width: 255px;
+    height: 300px;
+    z-index: 2;
+    right: 0;
+    top: -50px;
+}
+
+.history-image_1:hover, .history-image_2:hover, .history-image_3:hover{
+    transform: scale(1.25);
+    z-index: 3;
+}
+
+/* ! BLACK BLOCK */
+
+.black-block{
+    padding: 80px 0;
+    margin-top: 100px;
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+        url(images/PNG/black-block-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bb-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bb-info{
+    display: block;
+    width: 610px;
+}
+
+.bb-info-title{
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    color: #D67E34;
+}
+
+.bb-info-description{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+/* ! COOKS OF JIRANI */
 
 .our-cooks{
     padding: 100px 0;
@@ -571,6 +554,7 @@
     margin: 10px;
 }
 
+/* ! FEEDBACK FROM CLIENTS */
 
 .feedback{
     background-color: #E5E5E5;
@@ -606,8 +590,9 @@
     color: #000000;
 }
 
+/* ! FOOTER WITH SOCIAL MEDIA */
+
 .footer{
-    /* height: 200px; */
     background-image: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(images/JPEG/footer-bg.jpeg);
