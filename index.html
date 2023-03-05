@@ -10,11 +10,53 @@
 </head>
 <body>
 
-    <div class="header" id="main">
-        <div class="container">
+    <nav id="navbar">
+        <div class="navbar-menu">
+            <div class="popup-menu" id="popup">
+                <img src="images/PNG/logo.png" alt="logo">
+                <ul class="navbar-list">
+                    <li>
+                        <a class="nav-item" href="#main" id="nav-item">ГЛАВНАЯ</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#menu" id="nav-item">МЕНЮ</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#history" id="nav-item">О НАС</a>
+                    </li>
+                </ul>
+                <ul class="navbar-social-media">
+                    <li>
+                        <a href="https://www.instagram.com/" id="nav-item">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" id="nav-item">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" id="nav-item">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-list-contact">
+                    <li> 
+                        <div class="booking-btn">
+                            <a href="tel:+999-888-76-54" id="nav-item">ЗАБРОНИРОВАТЬ</a>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div class="header-container">
             <div class="header-nav-bar">
                 <div class="header-logo">
-                    <img src="images/PNG/logo.png" alt="header-logo">
+                    <a href="#main"><img src="images/PNG/logo.png" alt="header-logo"></a>
                 </div>
 
                 <div class="header-items">
@@ -30,7 +72,7 @@
                                 <img src="images/PNG/phone.png" alt="phone">
                             </div>
                             <div class="phone-number">
-                                <a href="#tel:+999-888-76-54">+999-888-76-54</a>
+                                <a href="tel:+999-888-76-54">+999-888-76-54</a>
                             </div>
                         </div>
     
@@ -40,12 +82,20 @@
                     </div>
     
                     <div class="call-btn">
-                        <a href="#tel:+999-888-76-54">ЗАБРОНИРОВАТЬ</a>
+                        <a href="tel:+999-888-76-54">ЗАБРОНИРОВАТЬ</a>
                     </div>
                 </div>
-            </div>
 
-            <div class="header-main">
+                <div class="header-bars-menu">
+                    <i class="fa fa-bars" id="header-menu"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="main">
+        <div class="container">
+            <div class="header-main" id="header-main">
                 <div class="header-title">
                     Добро пожаловать в <br> <span>Jirani</span>
                     <div class="header-btn-menu">
@@ -53,8 +103,9 @@
                     </div>
                 </div>
             </div>
+
         </div>
-    </div>
+    </header>
 
     <div class="cards">
         <div class="container">
@@ -250,12 +301,10 @@
                         себе нехитрый быт, добывать и готовить себе еду.
                     </div>
         
-
-                    <!-- TODO: animate numbers -->
                     <div class="history-numbers-container">
                         <div class="history-numbers">
                             <div class="history-number">
-                                93
+                                <span class=" history-number number" data-val="93">00</span>
                             </div>
                             <div class="number-description">
                                 Напитки
@@ -263,7 +312,7 @@
                         </div>
                         <div class="history-numbers">
                             <div class="history-number">
-                                206
+                                <span class=" history-number number" data-val="120">00</span>
                             </div>
                             <div class="number-description">
                                 Еда
@@ -271,7 +320,7 @@
                         </div>
                         <div class="history-numbers">
                             <div class="history-number">
-                                71
+                                <span class=" history-number number" data-val="71">00</span>
                             </div>
                             <div class="number-description">
                                 Закуски
@@ -303,7 +352,7 @@
                     </div>
                 </div>
                 <div class="bb-btn">
-                    <a href="#tel:+999-888-76-54">ЗАБРОНИРОВАТЬ</a>
+                    <a href="tel:+999-888-76-54">ЗАБРОНИРОВАТЬ</a>
                 </div>
             </div>
         </div>
@@ -350,9 +399,9 @@
                 <a href="#main"><span>J</span>irani</a>
             </div>
             <div class="footer-socials">
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
             </div>
         </div>
     </div>
