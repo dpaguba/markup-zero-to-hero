@@ -1,4 +1,4 @@
-# <img src="images/logo.png" style="height: 25px"> Grill House Jirani
+# <img src="images/logo.png" style="height: 25px;"> Grill House Jirani
 
 [Click here to see the result](https://dpaguba.github.io/js-restaurant-jirani/)
 
