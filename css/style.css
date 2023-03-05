@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -17,15 +16,17 @@
     -o-user-drag: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .container{
     margin: 0 165px;
 }
 
-/*! STICKY NAVBAR + MAIN + POPUP MENU */
-
 header{
     height: 100vh;
-    background: url(images/PNG/bg.png) no-repeat center;
+    background: url(../images/PNG/bg.png) no-repeat center;
     background-size: cover;
     display: flex;
     justify-content: flex-start;
@@ -68,6 +69,7 @@ nav{
 ul{
     list-style-type: none;
 }
+
 .popup-menu ul{
     margin: 50px auto;
 }
@@ -136,7 +138,7 @@ ul{
 }
 
 .header{
-    background-image: url(images/PNG/bg.png);
+    background-image: url(../images/PNG/bg.png);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,7 +169,6 @@ ul{
     color: #FF7400;
     transition: color 0.2s linear;
 }
-
 
 .phone{
     border-left: 1px solid #fff;
@@ -201,6 +202,7 @@ ul{
     padding: 14px;
     cursor: pointer;
 }
+
 .call-btn a{
     color: #fff;
     font-weight: 700;
@@ -213,8 +215,6 @@ ul{
     transition: color 0.2s linear;
 }
 
-
-/* ! BLOCK CARDS-ADVANTAGES  */
 .cards-container{
     display: flex;
     justify-content: center;
@@ -273,8 +273,6 @@ ul{
     font-family: 'Tinos';
     font-style: normal;
 }
-
-/* ! BLOCK DISH-RECOMMENDATION */
 
 .dishes-title{
     font-family: 'Tinos';
@@ -336,14 +334,12 @@ ul{
     box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);    
 } 
 
-/* ! NEW ITEMS IN MENU */
-
 .menu{
     margin: 150px 0 0 0;
     padding-bottom: 225px;
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
-        url(images/JPG/menu-bg.jpg);
+        url(../images/JPG/menu-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -415,7 +411,6 @@ ul{
 .price{
     padding: 28px;
     font-family: 'Cookie';
-
     font-size: 30px;
     color: #FFFFFF;
 }
@@ -427,7 +422,6 @@ ul{
 }
 
 .menu-item-description{
-
     font-size: 16px;
     color: #000;
     margin-bottom: 20px;
@@ -442,8 +436,6 @@ ul{
     font-size: 16px;
     color: #FFFFFF;
 }
-
-/* ! HISTORY OF JIRANI */
 
 .history{
     padding: 150px 0;
@@ -461,7 +453,6 @@ ul{
 
 .history-title{
     font-style: normal;
-
     font-size: 45px;
     color: #000000;
     text-align: center;
@@ -476,7 +467,6 @@ ul{
 .history-description{
     margin-top: 20px;
     font-style: normal;
-
     font-size: 16px;
     color: #656363;
     text-align: center;
@@ -551,14 +541,12 @@ ul{
     z-index: 3;
 }
 
-/* ! BLACK BLOCK */
-
 .black-block{
     padding: 80px 0;
     margin-top: 100px;
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
-        url(images/PNG/black-block-bg.png);
+        url(../images/PNG/black-block-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -588,8 +576,6 @@ ul{
     margin-top: 20px;
 }
 
-/* ! COOKS OF JIRANI */
-
 .our-cooks{
     padding: 100px 0;
 }
@@ -613,8 +599,6 @@ ul{
     width: 300px;
     margin: 10px;
 }
-
-/* ! FEEDBACK FROM CLIENTS */
 
 .feedback{
     background-color: #E5E5E5;
@@ -647,12 +631,10 @@ ul{
     color: #000000;
 }
 
-/* ! FOOTER WITH SOCIAL MEDIA */
-
 .footer{
     background-image: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-    url(images/JPEG/footer-bg.jpeg);
+    url(../images/JPEG/footer-bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -685,223 +667,4 @@ ul{
     font-family: 'Cookie';
     color: #FF7400;
     font-size: 80px;
-}
-
-/* ! RESPONSIVE */
-
-@media (max-width: 1300px){
-    .pizza{
-        display: none;
-    }
-    .dishes-title{
-        margin: 100px auto;
-    }
-    .hamburgers-menu{
-        display: block
-    }
-
-    .hamburger-item{
-        margin: 30px auto;
-    }
-
-
-    .menu-title{
-        padding: 60px;
-        text-align: center;
-    }
-
-    .menu-items{
-        display: block;
-    }
-
-    .menu-item{
-        margin: 50px auto;
-    }
-}
-
-@media (max-width: 1200px) {
-    .bb-container{
-        display: block;
-    }
-
-    .bb-info{
-        text-align: center;
-        margin: 50px auto;
-    }
-
-    .bb-btn{
-        display: flex;
-        justify-content: center;
-    }
-
-    .history-container{
-        display: block;
-    }
-
-    .history-info, .history-images{
-        margin: 50px auto;
-    }
-}
-
-@media (max-width: 1100px) {
-
-    header{
-        justify-content: center;
-        background-image: 
-            linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-            url(images/PNG/bg.png);
-    }
-
-    .header-title{
-        color: #fff;
-    }
-    .header-bars-menu{
-        display: block;
-        cursor: pointer;
-        z-index: 10;
-    }
-
-    .header-items{
-        display: none;
-    }
-
-    .header-menu{
-        display: block;
-        font-size: 1.2em;
-        cursor: pointer;
-        transition: 0.3s;
-        color: #FF7400;
-    }
-
-    .header-menu:hover{
-        color: #E54416;
-    }
-}
-
-@media (max-width: 950px) {
-    .cards-container{
-        display: block;
-    }
-
-    .card{
-        margin: 50px auto;
-    }  
-
-    .cooks-title{
-        margin: 0px;
-        padding: 0px;
-    }
-    .cooks-images{
-        display: block;
-    }
-
-    .cooks-images img{
-        display: block;
-        margin: 50px auto;
-    }
-
-    .bb-info-title{
-        font-size: 30px;
-    }
-    
-    .bb-info-description{
-        font-size: 14px;
-    }
-
-}
-
-@media (max-width: 800px) {
-    nav{
-        padding: 0 50px;
-    }
-    .container{
-        margin: 0 0;
-    }
-
-    .feedback, .bb-container, .history-description{
-        padding: 10px 50px;
-    }
-
-}
-
-@media (max-width: 550px) {
-    .dishes-title{
-        margin: 50px auto; 
-    }
-
-    .hamburger-item{
-        display: block;
-    }
-
-    .hamburger-info{
-        display: flex;
-        justify-content: center;
-    }
-
-    .history, .our-cooks, .our-dishes, .menu, .black-block, .menu-title{
-        padding: 50px 0;
-    }
-
-    .history-images{
-        width: 380px;
-        height: 320px;
-    }
-
-    .history-image_1{
-        width: 150px;
-        height: 200px;
-        z-index: 0;
-        left: 30px;
-        top: 0;
-    }
-
-    .history-image_2{
-        width: 170px;
-        height: 260px;
-        z-index: 1;
-        right: 0;
-    }
-
-    .history-image_3{
-        width: 150px;
-        height: 200px;
-        z-index: 2;
-        right: 30px;
-        top: -25px;
-    }
-
-    .bb-info{
-        margin: 10px auto;
-    }
-
-    .cooks-title, .cooks-title span, 
-    .history-title, .history-title span, .history-number,
-    .dishes-title, .dishes-title span,
-    .menu-title,
-    .header-title, .header-title span{
-        font-size: 40px;
-    }
-
-    .feedback-text, .feedback-username, 
-    .history-description, .number-description{
-        font-size: 14px;
-    }
-
-    .feedback-avatar img{
-        margin: 10px auto;
-        width: 100px;
-        height: 100px;
-    }
-}
-
-/* ! Classes for JavaScript */
-
-.navbar-menu-open{
-    height: 100vh;
-    opacity: 1;
-}
-
-.navbar-active{
-    background: 
-        linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
 }
