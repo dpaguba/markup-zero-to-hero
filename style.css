@@ -21,7 +21,7 @@
     margin: 0 165px;
 }
 
-/* ! NEW NAVBAR POPUP MENU */
+/*! STICKY NAVBAR + MAIN + POPUP MENU */
 
 header{
     height: 100vh;
@@ -92,7 +92,6 @@ ul{
 
 .booking-btn a{
     padding: 15px;
-    /* margin: 50px; */
     background-color: #FF7400;
     color: #fff;
     font-weight: 700;
@@ -135,7 +134,6 @@ ul{
 .header-btn-menu{
     margin: 50px;
 }
-/*! NAVBAR + MAIN */
 
 .header{
     background-image: url(images/PNG/bg.png);
@@ -156,10 +154,6 @@ ul{
     justify-content: flex-end;
     align-items: center;
 }
-
-/* .header-menu, .header-popup-menu{
-    display: none;
-} */
 
 .nav-item{
     color: #fff;
@@ -202,7 +196,6 @@ ul{
     font-size: 14px;
 }
 
-
 .call-btn{
     background-color: #FF7400;
     padding: 14px;
@@ -219,7 +212,6 @@ ul{
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
     transition: color 0.2s linear;
 }
-
 
 
 /* ! BLOCK CARDS-ADVANTAGES  */
@@ -695,6 +687,7 @@ ul{
     font-size: 80px;
 }
 
+/* ! RESPONSIVE */
 
 @media (max-width: 1300px){
     .pizza{
@@ -902,6 +895,7 @@ ul{
 }
 
 /* ! Classes for JavaScript */
+
 .navbar-menu-open{
     height: 100vh;
     opacity: 1;
