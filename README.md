@@ -1,18 +1,6 @@
 # <img src="images/logo.png" style="height: 25px;"> Grill House Jirani
 
-[Click here to see the result](https://dpaguba.github.io/js-restaurant-jirani/)
-
-### Technologies:
-
-<br>
-
- - HTML5
- - CSS3
- - JavaScript
-
-<br>
-
-**Duration:** 800 minutes
+[Click here to see the Figma design](https://www.figma.com/file/uKfmSNVeMl7MdOD5JLvDA2/Restaurant-Jirani?type=design&mode=design&t=vfZNXATOtrboUabN-1)
 
 <br>
 
