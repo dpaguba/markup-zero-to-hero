@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --logo: #69b9ff;
+  --link: #676770;
+  --link-hover: #0082f3;
+  --link-active: #0062b6;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+p {
+  color: #6a859c;
+  line-height: 1.8;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+  color: var(--logo);
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.header__nav ul{
+    display: flex;
+}
+
+.header__nav li + li{
+    margin-left: 40px;
+}
+
+.header__nav a {
+  color: var(--link);
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.header__nav a:hover {
+  color: var(--link-hover);
+}
+
+.header__nav a:active {
+    color: var(--link-active);
+  }
