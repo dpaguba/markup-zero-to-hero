@@ -5,6 +5,11 @@
   --link: #676770;
   --link-hover: #0082f3;
   --link-active: #0062b6;
+  --backup-welcome-bg: #282936;
+  --white: #ffffff;
+  --primary-link-bg: #69b9ff;
+  --primary-link-hover: #7cc2ff;
+  --primary-link-active: #0f8fff;
 }
 
 body {
@@ -24,14 +29,15 @@ p {
   line-height: 1.8;
 }
 
+/* ---------------- HEADER ---------------- */
 .header {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -41,12 +47,12 @@ p {
   text-transform: uppercase;
 }
 
-.header__nav ul{
-    display: flex;
+.header__nav ul {
+  display: flex;
 }
 
-.header__nav li + li{
-    margin-left: 40px;
+.header__nav li + li {
+  margin-left: 40px;
 }
 
 .header__nav a {
@@ -60,5 +66,92 @@ p {
 }
 
 .header__nav a:active {
-    color: var(--link-active);
-  }
+  color: var(--link-active);
+}
+
+/* ---------------- HEADER ---------------- */
+
+.main {
+}
+
+/* ---------------- WELCOME ---------------- */
+.welcome {
+  min-height: 600px;
+  height: 100vh;
+  padding: 195px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white);
+  text-align: center;
+
+  background-color: var(--backup-welcome-bg);
+  background-image: url("images/welcome-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome__title {
+  margin-bottom: 100px;
+
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: 4;
+  text-transform: uppercase;
+}
+
+.welcome__links > * + * {
+  margin-left: 20px;
+}
+
+.link-primary {
+  display: inline-block;
+  padding: 10px 30px;
+
+  font-size: 16px;
+  letter-spacing: 2;
+  text-transform: uppercase;
+
+  background-color: var(--primary-link-bg);
+
+  border: 1px solid var(--primary-link-bg);
+  border-radius: 5px;
+
+  transition: background-color 0.1s, border-color 0.1s;
+}
+
+.link-primary:hover {
+  background-color: var(--primary-link-hover);
+  border-color: var(--primary-link-hover);
+}
+
+.link-primary:active {
+  background-color: var(--primary-link-active);
+  border-color: var(--primary-link-active);
+}
+
+.link {
+  display: inline-block;
+  padding: 10px 30px;
+
+  font-size: 16px;
+  letter-spacing: 2;
+  text-transform: uppercase;
+
+  border: 1px solid var(--white);
+  border-radius: 5px;
+
+  transition: background-color 0.1s, border-color 0.1s;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.link:active {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.5);
+}
