@@ -266,3 +266,51 @@ p {
 .services .link {
   margin-top: 15px;
 }
+
+/* ---------------- TABS ---------------- */
+
+.tab-section {
+
+}
+.tabs {
+}
+.tabs__nav {
+  margin-bottom: 50px;
+}
+
+.tabs__nav button{
+  padding: 5px 30px;
+
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--white);
+
+  background-color: #92a0ad;
+  border-radius: 4px;
+}
+
+.tabs__nav button.active{
+  background-color: #2e80b6;
+}
+
+.tabs__nav button + button{
+  margin-left: 15px;
+}
+
+.tabs__item img{
+  margin-bottom: 15px;
+}
+
+.tabs__item  h4{
+  margin-bottom: 15px;
+  font-size: 30px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.tabs__desc{
+  max-width: 700px;
+  margin: 0 auto;
+}
