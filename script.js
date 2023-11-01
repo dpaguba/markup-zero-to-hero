@@ -17,3 +17,14 @@ tabsButtons.forEach((button, index) => button.addEventListener("click", () => {
     showTab(index)
 }))
 
+anchors.forEach(anchor => anchor.addEventListener("click", function (event) {
+    event.preventDefault()
+
+    const id = anchor.getAttribute("href")
+    const element = document.querySelector(id)
+
+    window.scroll({
+        top: element.offsetTop - 75,
+        behavior: "smooth"
+    })
+}))
