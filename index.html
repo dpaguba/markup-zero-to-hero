@@ -16,14 +16,14 @@
 
         <nav class="header__nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#footer">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
       <section class="welcome">
         <div class="container">
           <h2 class="welcome__title">This is Velocity</h2>
@@ -35,7 +35,7 @@
         </div>
       </section>
 
-      <section class="about common-section">
+      <section class="about common-section" id="about">
         <div class="container">
           <div class="title-wrapper">
             <h3 class="title">we are velocity</h3>
@@ -177,13 +177,7 @@
                   Korean/Asian markets. So the client decided to make an
                   in-house DBMS. The project’s first stable release dates back
                   to October, 2008. Our team has joined in Jan 2009 and has been
-                  working continuously on the project since then. Over 100
-                  organizations in Korea are now using CUBRID as their database
-                  management system. Having a huge range of usability (web apps,
-                  commercial, banking, defence) CUBRID is an open source
-                  relational database management system that successfully
-                  competes with MySQL, PostgreSQL, MariaDB and other similar
-                  open source products.
+                  working continuously on the project since then.
                 </p>
               </div>
             </div>
@@ -212,7 +206,7 @@
               <li><a href="https://medium.com/building-the-metaverse">Building the metaverse blog</a></li>
             </ul>
           </div>
-          <div class="footer__social">
+          <div class="footer__social" id="footer">
             <h4>Social</h4>
             <ul>
               <li>
@@ -237,5 +231,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
