@@ -27,4 +27,6 @@ Here are the projects you'll find in this repository:
 - **Figma:** [🎞️ Velocity](https://www.figma.com/file/iZeRXiF9s6pAxLI11oweaK/Velocity?type=design&mode=design&t=xJVmC0qucVrsVSTo-1)
 - **Demo:**
 
+![velocity](https://github.com/dpaguba/markup-zero-to-hero/assets/88382171/f8c0637c-0233-44d6-a350-44e60350e181)
+
 <br>
