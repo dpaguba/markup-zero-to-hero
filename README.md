@@ -16,7 +16,7 @@ Here are the projects you'll find in this repository:
 - **Folder:** [📁 jirani](/jirani/)
 - **Figma:**[🎞️ Jirani]()
 - **Demo:**
-- 
+  
 ![jirani](https://github.com/dpaguba/markup-zero-to-hero/assets/88382171/d8cda4e0-612e-436f-b867-7ded5c5baffe)
 
 <br>
